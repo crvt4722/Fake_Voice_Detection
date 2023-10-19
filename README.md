@@ -1,10 +1,17 @@
-# MiAI_Sound_Classifier
-Train computer to listen and classify sound by CNN
+# By Pham Van Toi
+## Description
+This repository is used to classify the audio which is the real or fake voice from robots, AI computers, ... by the CNN model.   
+## Idea
+First, we have to convert the audio files (.wav) to the image files (.png). You can find it out in this [source](processing_data.py).  
 
-Article link:  http://ainoodle.tech/2019/10/27/day-cho-may-tinh-nghe-va-phan-biet-am-thanh-bang-cnn/
+From these data, we create a CNN model and save it to [model.keras](model.keras) file.  
 
-#MìAI <br>
-Fanpage: http://facebook.com/miaiblog<br>
-Group trao đổi, chia sẻ: https://www.facebook.com/groups/miaigroup<br>
-Website: http://ainoodle.tech<br>
-Youtube: http://bit.ly/miaiyoutube<br>
+From this trained model(model.keras), we can use it to classify the audio which is the real or fake voice.  
+
+## Set up
+All needed datasets, I shared in the [data](data/) folder.  
+
+To apply this code, you have to install the needed libraries first by running this command:  
+`pip install -r setup.txt`  
+
+*Have an enjoyable coding!*
